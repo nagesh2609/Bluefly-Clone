@@ -1,0 +1,251 @@
+#main{
+    /* border:1px solid black; */
+    width:90%;
+    margin:auto;
+    height:700px;
+    display:flex;
+}
+#left{
+    /* border:1px solid red; */
+    width:57%;
+    padding:10px;
+    display:flex;
+    justify-content: space-around;
+    
+}
+#right{
+   /* border: 1px solid blue; */
+   width:41%;
+}
+#firstleft{
+ width:15%;
+ height:50%;
+ /* border:1px solid black; */
+
+}
+
+#secondleft{
+    width:65%;
+    height:100%;
+    /* border:1px solid green; */
+    text-align: center;
+}
+#firstleft>div{
+    height:32%;
+    margin-bottom:5px;
+    /* border:1px solid green; */
+    text-align: center;
+}
+#firstleft>div:hover{
+    border:1px solid black;
+}
+#firstleft>div>img{
+    width:100%;
+}
+#secondleft>img{
+    width:100%;
+}
+#brand{
+    font-size: 20px;
+text-transform: uppercase;
+font-weight: 700;
+    font-family: Futura,sans-serif;
+letter-spacing: .025em;
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: 100%;
+text-rendering: optimizeSpeed;
+}
+
+
+#name{
+font-family: Tiemann,serif;
+font-weight: 400;
+letter-spacing: 0em;
+line-height: 1;
+text-transform: uppercase; 
+margin-top:-25px; }
+#pricedetails{
+width:42%;
+margin-top:-20px;
+display:grid;
+grid-template-columns: repeat(3,1fr);
+gap:-10px;
+}
+/* #pricedetails>p:nth-child(2){
+margin-left:-10px;
+} */
+#pricedetails>div:last-child{
+color: #ff4e4e;
+} 
+#shipping{
+margin-top:0px;
+font-size: 13px;
+font-family: Futura,sans-serif;
+letter-spacing: .025em;
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: 100%;
+text-rendering: optimizeSpeed
+
+}
+hr{
+display: block;
+width:90%;
+margin:auto;
+margin-top:25px;
+height: 1px;
+border: 0;
+border-top: 1px solid #e8e8e1
+}
+#selectsize{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+}
+#size,#clr,#span{
+font-size: 10px;
+font-family: Futura,sans-serif;
+
+}
+#quote{
+font-size: 10px;
+margin-top: -5px;
+}
+button{
+width:87%;
+padding:10px;
+font-size: 13px;
+background-color: black;
+color:white; 
+margin-top: 20px;   
+}
+#smallimage{
+width:10%;
+height:50px;
+border:2px solid black;
+text-align: center;
+
+border-radius: 55%;
+margin-left:20px;
+
+
+}
+#smallimage>img{
+width:100%;
+border-radius: 55%;
+
+}
+button+h4{
+color: rgb(250, 48, 48) !important;
+width:80%;
+font-size: 10px; 
+font-family: Arial, Helvetica, sans-serif; 
+letter-spacing: .125em;
+line-height: 1.6;
+
+}
+h4+p{
+width:78.6%;
+font-size: 11px;
+font-family: Futura,sans-serif;
+letter-spacing: .110em;
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: 100%;
+text-rendering: optimizeSpeed
+}
+ul{
+font-size: 12px;
+margin-left:-15px;
+margin-top:-5px;
+font-family: arial;
+}
+h3{
+margin-left: 5px;
+font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+}
+/* #selectsize>div{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+} */
+
+
+/* for you may like part */
+
+
+.midhead{
+font-family: Tiemann,serif;
+text-align: center;
+font-weight: 400;
+line-height: 1;
+font-size: 22px;
+}
+
+#mid,#bottom{
+display:grid;
+grid-template-columns: repeat(5,1fr);
+gap:10px;
+}
+
+
+#mid>div>img,#bottom>div>img{
+width:100%
+}
+#likediv{
+width:80%;
+margin:auto;
+margin-top:10px;
+display:grid;
+grid-template-columns: repeat(3,1fr);
+gap:0px;
+}
+#likediv>div{
+text-align: center;
+}
+
+#likediv>div:last-child{
+color:#ff4e4e;
+}
+
+#sectiontitle{
+
+margin: auto;
+margin-top: 8px;
+font-size: 11px;
+letter-spacing: .125em;
+font-family: Tiemann,serif;
+text-align: center;
+font-weight: 400;
+line-height: 1;
+
+}
+.select{
+display:flex;
+}
+.select>p{
+margin-top: -5px;
+padding:5px;
+font-size: 13px;
+border:1px solid black;
+background-color: rgb(250, 250, 250);
+}
+#selectsize{
+width:35%;
+display:grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(2,auto);
+}
+#selectsize+h3{
+margin-top:-74px;
+margin-bottom:50px;
+margin-left:80%;
+text-decoration: underline;
+}
+#share{
+width:16%;
+margin-top:-22px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
