@@ -1,8 +1,9 @@
-var data = [
+var womendata = [
     {
         image:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/IRtvNkoig8EGOV5nWFXpHIn8ITA17akU-25_large.jpg?v=1651300682",
         brand:"BCBGMAXAZRIA",
-        name:"WOMENS SATIN SMOCKED WAIST EVENING DRESS",
+        name:"WOMENS SATIN SMOCKED WAIST EVENING ",
+       
         original_price:"$130.99",
         offer_price:"$145.99"
     },
@@ -10,13 +11,15 @@ var data = [
         image:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/kmeRDBDg4kSFeUkS840inVvZZtYYBXqU-25_large.jpg?v=1651399591",
         brand:"HUTCH",
         name:"MINDY WOMENS FLORAL CALF MIDI DRESS",
+        
         original_price:"$83.99",
         offer_price:"$95.99"
     },
     {
         image:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/XYzPFdx5coB3dMD6jzW7ir30RYyUWTH6-25_large.jpg?v=1650539762",
         brand:"JS COLLECTIONS",
-        name:"WOMENS LACE SOUTACHE EVENING DRESS",
+        name:"WOMENS LACE SOUTACHE EVENING  DRESS ",
+        
         original_price:"$33.99",
         offer_price:"$65.99"
 
@@ -286,10 +289,36 @@ var data = [
 
     },  
 ]
+localStorage.setItem("womensData",JSON.stringify(womendata));
 
-function display(data){
-    console.log("data")
-    data.map(function(el){
+var womensdata = JSON.parse(localStorage.getItem("womensData")) || [];
+
+
+var flag = true;
+  document.querySelector("#dress1").addEventListener("click", function () {
+    if (flag) {
+      document.querySelector(".hide").style.display = "none";
+      return (flag = false);
+    } else {
+      document.querySelector(".hide").style.display = "block";
+      return (flag = true);
+    }
+  });
+  var flag2 = true;
+  document.querySelector("#dress2").addEventListener("click", function () {
+    if (flag2) {
+      document.querySelector(".hide2").style.display = "none";
+      return (flag2 = false);
+    } else {
+      document.querySelector(".hide2").style.display = "block";
+      return (flag2 = true);
+    }
+  });
+display(womendata)
+
+
+function display(womensdata){
+    womensdata.map(function(el){
         var card=document.createElement("div");
         card.setAttribute("id","card")
 
@@ -302,12 +331,17 @@ function display(data){
         var h1=document.createElement("h4");
         h1.textContent=el.name;
 
+        var type = document.createElement("p");
+        type.textContent=el.type
+
         var p1=document.createElement("p")
         p1.textContent=el.original_price;
         p1.setAttribute("class","para")
 
         var p2=document.createElement("p")
         p2.textContent=el.offer_price;
+
+        
 
         var div2 = document.createElement("div")
 
@@ -325,6 +359,6 @@ function display(data){
 
     })    
 }
-display(data);
+
 
 
