@@ -1,0 +1,477 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+.stiky{
+    position: fixed;
+    width: 100%;
+    background-color:white;
+    color: gray;
+}
+
+.zxnav {
+    width: 100%;
+    height: auto;
+    /* border: 1px red solid; */
+    margin-top: 20px;
+}
+
+.zxlogobox1 {
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.zxlogobox1>a>img {
+    padding-left: 400px;
+    padding-right: 200px;
+}
+
+.zxlogcon {
+
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.zxlogcon a>img {
+    width: 25px;
+    height: 25px;
+    margin-top: 15px
+}
+
+/* for new line */
+/* .nav{
+    /* margin-left: 50px;
+    margin-right: 50px; */
+.nav {
+    width: 99%;
+    margin: auto;
+    display: flex;
+    /* grid-template-columns: (auto auto auto auto auto auto auto auto auto);
+    grid-template-rows: auto;
+    row-gap: 10px; */
+
+
+    /* align-items: center; */
+    justify-content: space-around;
+    margin-top: 0px;
+
+    /* width: 100%; */
+    background: #fff;
+    height: 50px;
+    /* border: 1px red solid; */
+}
+
+.CLEARANCE {
+    color: red;
+}
+
+ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+ul li {
+
+    float: left;
+    margin-top: 5px;
+}
+
+ul li a {
+
+    width: 100%;
+    color: rgb(95, 93, 93);
+    display: flex;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Helvetica, Helvetica, Arial, sans-serif;
+    margin-left: 9px;
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li ul {
+    background: white;
+}
+
+ul li ul {
+    display: none;
+}
+
+ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background: white;
+    color: black;
+}
+
+.nav>ul>li>a:hover {
+    text-decoration: underline;
+}
+.bodyimg>img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.heading1x {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    /* cursor: pointer; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+}
+
+.heading2x {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    /* cursor: pointer; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+
+}
+
+.btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+/* -----------------New section ----------------------------- */
+
+.modals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    margin-bottom: -30px;
+}
+
+.modals>div>img {
+    position: relative;
+    height: 80%;
+    width: 100%;
+}
+
+.modalsHead1 {
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 4%;
+    width: 25%;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.modalsHead2 {
+    position: absolute;
+    margin-top: -16.5%;
+    /* margin-left: 6%; */
+    margin-left: 1.5%;
+    width: 30%;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 700;
+
+
+}
+
+.modalsHead3 {
+    position: absolute;
+    margin-top: -13%;
+    margin-left: 1.5%;
+    width: 30%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.modalsHead4 {
+    position: absolute;
+    margin-top: -7%;
+    margin-left: 1.5%;
+    width: 30%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+button {
+    border: 0px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.modals>div>.modalsHead4>button>a {
+    text-decoration: none;
+    color: black;
+    background-color: aliceblue;
+}
+
+.shopByCat {
+    text-align: center;
+}
+
+.productx1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    grid-template-rows: auto;
+    margin-bottom: 5%;
+}
+
+.productx1>div>img {
+    width: 85%;
+    height: 250px;
+}
+
+.productx1 :nth-child(4) img {
+    height: 100px;
+    margin-top: 50%;
+    padding-bottom: 31PX;
+}
+
+.productx2 {
+    text-align: center;
+}
+
+.productx2>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------------------------ */
+.divle {
+    width: 100%;
+}
+
+.bodyimg2>img {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 10px;
+}
+
+.heading1x1 {
+    position: absolute;
+    margin-top: -29%;
+    margin-left: 350px;
+    width: 60%;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+
+.heading2x2 {
+    position: absolute;
+    margin-top: -15%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+
+}
+
+button {
+    border: 0px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    /* text-decoration: none; */
+}
+
+.divlebtn>a {
+    text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.divlebtn {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: -55%;
+    /* width: 50px ; */
+    text-align: center;
+    /* font-weight: bold; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* letter-spacing: 2px; */
+    /* border-radius: 5px; */
+}
+
+
+/* ---------------------------------------------------------------- */
+
+.bodybtn3 {
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    padding: 10px;
+    margin-left: 46.5%;
+    margin-bottom: 30px;
+}
+
+.shopByTrnd>div>img {
+    width: 95%;
+    height: 250px;
+    /* border: 1px red solid; */
+}
+
+.shopByTrnd {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+    gap: 30px;
+    grid-template-rows: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    /* border: 1px red solid; */
+}
+
+.shopByTrnd>div>p {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.shopByTrnd>div>div {
+    display: flex;
+    margin-left: 30px;
+}
+
+.shopByTrnd1 {
+    text-decoration: line-through;
+}
+
+.shopByTrndx>a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.shopByTrnd3 {
+    color: red;
+}
+
+/* ---------------------------------------------------- */
+
+.trendingx {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+
+}
+
+.trendingx1>img {
+    height: 300px;
+    width: 95%;
+}
+
+.trendingx1>p {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.shopByTrndx {
+    display: flex;
+    justify-content: center;
+}
+.slast > div > img{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+.slast{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    grid-template-rows: auto;
+    gap:20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.slast > div > h1 {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+}
+.slast > div > p {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: 16px;
+}
+.slast > div > a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.slast > div > a > button{
+    color: black;
+    background-color: #fff;
+    border: 1px black  solid;
+    letter-spacing: 2PX;
+    font-size: 15PX;
+}
+.lastdiv{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+    border: black 1px solid;
+}
+
