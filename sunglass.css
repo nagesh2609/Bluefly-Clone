@@ -1,0 +1,65 @@
+#container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+#left {
+    width: 15%;
+    border: 1px solid;
+}
+
+#card {
+    /* border: 1px solid; */
+    width: 80%;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    height: 400px;
+    margin-bottom: 5%;
+}
+
+#card img {
+    width: 100%;
+    margin-top: 25%;
+    /* height: 250px; */
+}
+
+#price {
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    
+}
+.para{
+    text-decoration: line-through;
+}
+
+h5 {
+    color: gray;
+
+}
+.glass1{
+    margin-top: 15px;
+}
+.cat{
+    display: flex;
+    margin-top: 7px;
+}
+#arrow{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+#info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+h1{
+    text-align: center;
+}
