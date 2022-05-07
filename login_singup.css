@@ -388,6 +388,7 @@ body {
   #invalid>p{
     border: 1px solid #d02e2e;
     color: #d02e2e;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
