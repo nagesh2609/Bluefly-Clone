@@ -117,26 +117,22 @@
 
 
     <!-- <div></div> -->
-    <div class="signup-box">
-        <h1> CREATE ACCOUNT </h1>
+    <div class="login-box">
+        <h1>Login</h1>
         <form>
-          <label>FIRST NAME</label>
-          <input type="text" id="fname" />
-          <label>LAST NAME</label>
-          <input type="text" id="lname" />
+          <p id="invalid"></p>
           <label>EMAIL</label>
           <input type="email" id="email" />
-          <label>PASSWORD </label>
+          <div id="pass_sec">
+            <label>PASSWORD</label>
+            <label>Forgot password?</label>
+          </div>        
           <input type="password" id="pass" />
-          <div>
-           <input type="checkbox" checked="checked"/> 
-            <p>Subscribe to stay updated with new offers!</p>  
-          </div>
-          <input type="submit" value="CREATE" />
-          
-          
+          <input type="submit" value="SIGN IN" />
+          <p id="createAC"> <a href="signup.html">Create account </a> </p>
         </form>
       </div>
+   
 
 
     <!-- -------------------- -->
@@ -170,28 +166,31 @@
 
 </html>
 <script>
-    document.querySelector("form").addEventListener("submit",sign_up_fun);
-  var per_details=JSON.parse(localStorage.getItem("cust_details")) || [];
-  
-  function sign_up_fun(){
-    event.preventDefault();
-    var perfname=document.querySelector("#fname").value;
-    var perlname=document.querySelector("#lname").value;
-    var per_email=document.querySelector("#email").value;
-    var per_pass= document.querySelector("#pass").value;
-   
-    var per_obj={
-      fname:perfname,
-      lname:perlname,
-      email:per_email,
-      pass:per_pass
+    document.querySelector("form").addEventListener("submit",formfunction);
+    var valid_data=JSON.parse(localStorage.getItem("cust_details"))
+    function formfunction(){
+      event.preventDefault();
+      var per_email=document.querySelector("#email").value;
+      var per_pass= document.querySelector("#pass").value;
+    var x=0;
+    valid_data.forEach(function(elem){
+      if(elem.email==per_email && elem.pass==per_pass && elem.email!="" && elem.pass!="")
+        {window.location.href="index.html"
+        }
+        else{
+           x=0;
+        }
+        
+    })
+    if(x==0){
+      var wr_input=document.createElement("p")
+          wr_input.innerText=".  Incorrect email or password";
+          invalid.append(wr_input);
     }
-    per_details.push(per_obj)
-    localStorage.setItem("cust_details",JSON.stringify(per_details))
-    document.querySelector("#fname").innerText="";
-    document.querySelector("#lname").innerText="";
-    document.querySelector("#email").innerText="";
-    document.querySelector("#pass").innerText="";
-    window.location.href="login.html"
-  }
-  </script>
+    
+    }
+    
+    </script>
+    
+    
+    
