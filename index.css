@@ -4,10 +4,13 @@
 
 }
 .stiky{
+    z-index: 1;
+    background-color: aliceblue;
     position: fixed;
     width: 100%;
     background-color:white;
-    color: gray;
+    color: black;
+    height: auto;
 }
 
 .zxnav {
@@ -120,6 +123,9 @@ ul li:hover ul {
 .nav>ul>li>a:hover {
     text-decoration: underline;
 }
+.bodyimg{
+    padding-top: 150px;
+}
 .bodyimg>img {
     width: 100%;
     height: 400px;
@@ -179,13 +185,14 @@ ul li:hover ul {
 }
 
 .modals>div>img {
-    position: relative;
+    /* position: relative; */
     height: 80%;
     width: 100%;
 }
 
 .modalsHead1 {
     position: absolute;
+    top: 100px;
     margin-top: -20%;
     margin-left: 4%;
     width: 25%;
@@ -288,7 +295,7 @@ button {
 }
 
 .bodyimg2>img {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 450px;
     margin-bottom: 10px;
@@ -473,5 +480,10 @@ button {
     grid-template-rows: 200px 200px 200px;
     gap: 20px;
     border: black 1px solid;
+}
+
+.cooler{
+    border:1px solid red;
+    display:flex; 
 }
 
