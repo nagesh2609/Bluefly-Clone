@@ -35,12 +35,16 @@
             <ul>
                 <li><a href="#">SHOES</a>
                     <ul>
-                        <li><a href="#">WOMEN'S SHOES</a>
-
-                        </li>
+                        <!-- <div class="cooler"> 
+                            <div>
+                                <img src="https://cdn1.iconfinder.com/data/icons/office-suite-1/100/BOL_11-512.png"/>
+                            </div>                        -->
+                            <li><a href="#">WOMEN'S SHOES</a></li>
                         <li><a href="#">WOMEN'S DESIGNERS</a></li>
                         <li><a href="#">MEN'S SHOES </a></li>
                         <li><a href="#">MEN'S DESIGNERS</a></li>
+                    <!-- </div> -->
+
                     </ul>
                 </li>
                 <li><a href="#">HANDBAG & ACCESSORIES</a>
@@ -61,9 +65,9 @@
                         <li><a href="#">Christian Louboutin</a></li>
                     </ul>
                 </li>
-                <li><a href="#">WOMEN</a>
+                <li><a href="womenPage.html">WOMEN</a>
                     <ul>
-                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="womenPage.html">CLOTHING</a></li>
                         <li><a href="#">HANDBAGS</a></li>
                         <li><a href="#">SHOES</a></li>
                         <li><a href="#">JEWELRY</a></li>
@@ -184,8 +188,14 @@
     })
     if(x==0){
       var wr_input=document.createElement("p")
+            // window.location.reload()
+            invalid.innerHTML= ""
           wr_input.innerText=".  Incorrect email or password";
+         
           invalid.append(wr_input);
+          
+         
+
     }
     
     }
