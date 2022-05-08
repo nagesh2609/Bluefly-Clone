@@ -286,6 +286,26 @@ var data = [
 
     },  
 ]
+var flag = true;
+  document.querySelector("#dress1").addEventListener("click", function () {
+    if (flag) {
+      document.querySelector(".hide").style.display = "none";
+      return (flag = false);
+    } else {
+      document.querySelector(".hide").style.display = "block";
+      return (flag = true);
+    }
+  });
+  var flag2 = true;
+  document.querySelector("#dress2").addEventListener("click", function () {
+    if (flag2) {
+      document.querySelector(".hide2").style.display = "none";
+      return (flag2 = false);
+    } else {
+      document.querySelector(".hide2").style.display = "block";
+      return (flag2 = true);
+    }
+  });
 
 function display(data){
     console.log("data")

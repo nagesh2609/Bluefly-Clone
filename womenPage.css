@@ -1,13 +1,13 @@
 #container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #right {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 70%;
-    border: 1px solid;
+    /* border: 1px solid; */
     text-align: center;
 }
 
@@ -17,13 +17,16 @@
 }
 
 #card {
-    border: 1px solid;
+    /* border: 1px solid; */
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     width: 80%;
     height: 400px;
+    margin-bottom: 5%;
 }
 
 #card img {
     width: 100%;
+    margin-top: 30%;
     /* height: 250px; */
 }
 
@@ -43,4 +46,25 @@ h5 {
 }
 .cat{
     display: flex;
+    margin-top: 7px;
+}
+.dress1{
+    margin-top: 15px;
+}
+.dress2{
+    margin-top: 15px;
+}
+
+
+#arrow{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+#info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+h1{
+    text-align: center;
 }
