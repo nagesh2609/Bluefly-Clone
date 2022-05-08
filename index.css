@@ -11,6 +11,9 @@
     background-color: white;
     color: gray;
 }
+#search{
+    margin-top: 20px;
+}
 
 .zxnav {
     width: 100%;
@@ -432,6 +435,8 @@ button {
     display: flex;
     justify-content: center;
 }
+
+/* ----------------------------------------------- */
 
 .slast>div>img {
     width: 100%;
