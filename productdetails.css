@@ -2,7 +2,7 @@
     /* border:1px solid black; */
     width:90%;
     margin:auto;
-    height:700px;
+    height:auto;
     display:flex;
 }
 #left{
@@ -33,6 +33,7 @@
 #firstleft>div{
     height:32%;
     margin-bottom:5px;
+    overflow: hidden;
     /* border:1px solid green; */
     text-align: center;
 }
@@ -72,9 +73,9 @@ display:grid;
 grid-template-columns: repeat(3,1fr);
 gap:-10px;
 }
-/* #pricedetails>p:nth-child(2){
-margin-left:-10px;
-} */
+#pricedetails>div:first-child{
+text-decoration: line-through;
+}
 #pricedetails>div:last-child{
 color: #ff4e4e;
 } 
@@ -98,10 +99,10 @@ height: 1px;
 border: 0;
 border-top: 1px solid #e8e8e1
 }
-#selectsize{
+/* #selectsize{
 display:grid;
 grid-template-columns: repeat(3,1fr);
-}
+} */
 #size,#clr,#span{
 font-size: 10px;
 font-family: Futura,sans-serif;
@@ -127,6 +128,8 @@ text-align: center;
 
 border-radius: 55%;
 margin-left:20px;
+overflow: hidden;
+
 
 
 }
@@ -200,13 +203,40 @@ display:grid;
 grid-template-columns: repeat(3,1fr);
 gap:0px;
 }
+
+#maylike{
+    position:relative;
+
+}
+#hoverdiv{
+    position:absolute;
+    background-color: black;
+    color:white;
+    width:80%;
+    margin-left:9.8%;
+    margin-top: -40%;
+    font-size: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    display:none;
+
+}
+#maylike:hover>#hoverdiv{
+    display: block;
+cursor: pointer;
+}
 #likediv>div{
 text-align: center;
+}
+#likediv>div:first-child{
+    text-decoration: line-through;
 }
 
 #likediv>div:last-child{
 color:#ff4e4e;
 }
+
 
 #sectiontitle{
 
@@ -231,7 +261,7 @@ border:1px solid black;
 background-color: rgb(250, 250, 250);
 }
 #selectsize{
-width:35%;
+width:40%;
 display:grid;
 grid-template-columns: repeat(2,1fr);
 grid-template-rows: repeat(2,auto);
@@ -248,4 +278,94 @@ margin-top:-22px;
 display:flex;
 justify-content: space-between;
 align-items: center;
+}
+#lastbar{
+    width:20%;
+    margin:auto;
+    margin-top:15px;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+#lastbar>p{
+    font-size: 10px;;
+    padding:7px;
+    letter-spacing: 0.125em;
+}
+
+@media all and (min-width:250px) and (max-width:767px){
+    #main{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #left{
+        width:100%;
+        margin:auto;
+        padding:0px;
+    }
+    #firstleft{
+        width:0%;
+        display:none;
+    }
+    #secondleft{
+        width:100%;
+        padding:0px;
+        margin-left: 15%;
+    }
+    #selectsize{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #right{
+        width:100%;
+        text-align: center;
+    }
+    #pricedetails{
+        width:70%;
+        margin-left:20%;
+    }
+    #selectsize{
+        width:40%;
+        margin:auto;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,auto);
+        }
+        #selectsize+h3{
+            margin-right:-10%;
+        }
+        #smallimage{
+            margin:auto;
+        }
+        #mid{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:10px;
+            }
+            #likediv{
+                width:80%;
+                margin:auto;
+                margin-top:10px;
+                display:grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:5px;
+            }
+                button+h4{
+                    width:95%;
+                    margin:auto;
+                    margin-top:20px;
+                }
+                h4+p{
+                    width:95%;
+                    margin:auto;
+                    margin-top:20px;
+                    margin-bottom:10px;
+                }
+                ul{
+                    text-align: left;
+                }
+                #bottom{
+                    overflow:auto;
+                }
+                
 }
