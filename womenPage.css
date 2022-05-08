@@ -1,3 +1,7 @@
+#main{
+    margin-top: 10%;
+}
+
 #container {
     display: flex;
     justify-content: space-evenly;
@@ -13,14 +17,15 @@
 
 #left {
     width: 15%;
-    border: 1px solid;
+    /* border: 1px solid; */
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 #card {
     /* border: 1px solid; */
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     width: 80%;
-    height: 400px;
+    height: 550px;
     margin-bottom: 5%;
 }
 
@@ -36,6 +41,7 @@
     color: gray;
     
 }
+
 .para{
     text-decoration: line-through;
 }
@@ -62,9 +68,17 @@ h5 {
 }
 #info{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 15px;
+}
+#info button{
+    margin-left: 45%;
 }
 h1{
     text-align: center;
+}
+
+.disc{
+    color: rgb(245, 24, 61);
+    
 }

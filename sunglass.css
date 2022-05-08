@@ -1,6 +1,11 @@
+#main{
+    margin-top: 10%;
+}
+
 #container {
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 #right {
@@ -13,20 +18,21 @@
 
 #left {
     width: 15%;
-    border: 1px solid;
+    /* border: 1px solid; */
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 #card {
     /* border: 1px solid; */
     width: 80%;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-    height: 400px;
+    /* height: 530px; */
     margin-bottom: 5%;
 }
 
 #card img {
     width: 100%;
-    margin-top: 25%;
+    margin-top: 15%;
     /* height: 250px; */
 }
 
@@ -57,9 +63,15 @@ h5 {
 }
 #info{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 15px;
+}
+#info button{
+    margin-left: 45%;
 }
 h1{
     text-align: center;
+}
+.disc{
+    color: rgb(245, 24, 61);
 }
