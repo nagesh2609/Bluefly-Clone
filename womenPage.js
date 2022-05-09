@@ -4,21 +4,24 @@ var data = [
         brand: "BCBGMAXAZRIA",
         name: "WOMENS SATIN SMOCKED WAIST EVENING DRESS",
         original_price: "130.99",
-        offer_price: "145.99"
+        offer_price: "145.99",
+        color:"BLACK"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/kmeRDBDg4kSFeUkS840inVvZZtYYBXqU-25_large.jpg?v=1651399591",
         brand: "HUTCH",
         name: "MINDY WOMENS FLORAL CALF MIDI DRESS",
         original_price: "83.99",
-        offer_price: "135.99"
+        offer_price: "135.99",
+        color:"PINK"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/XYzPFdx5coB3dMD6jzW7ir30RYyUWTH6-25_large.jpg?v=1650539762",
         brand: "JS COLLECTIONS",
         name: "WOMENS LACE SOUTACHE EVENING DRESS",
         original_price: "33.99",
-        offer_price: "65.99"
+        offer_price: "65.99",
+        color:"WHITE"
 
     },
     {
@@ -26,7 +29,8 @@ var data = [
         brand: "KAY UNGER NEW YORK",
         name: "CLAUDIA WOMENS EMBROIDERED MAXI EVENING DRESS",
         original_price: "168.99",
-        offer_price: "199.99"
+        offer_price: "199.99",
+        color:"BLUE"
 
     },
     {
@@ -34,7 +38,8 @@ var data = [
         brand: "BCBGMAXAZRIA",
         name: "BCBG MAX AZRIA WOMENS SNAKE PRINT HI-LOW WRAP DRESS",
         original_price: "258",
-        offer_price: "366.99"
+        offer_price: "366.99",
+        color:"BLACK"
 
     },
     {
