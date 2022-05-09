@@ -4,7 +4,8 @@ var data = [
         brand: "DIOR",
         name: "DIOR GEOMETRIC SUNGLASSES LINK 2 08690 DARK HAVANA/GOLD 59MM",
         original_price: "415",
-        offer_price: "500",
+        offer_price: "500",  
+        color:"Black"
     },
     {
         image: " https://cdn.shopify.com/s/files/1/0248/3473/6191/products/Link-2-0869O-2_large.jpg?v=1628917530",
@@ -12,6 +13,7 @@ var data = [
         name: "TOM FORD IVORY CAT-EYE FT9284/S 25F BARDOT SUNGLASSES",
         original_price: "425",
         offer_price: "549.98",
+        color:"Black"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/69464__org02_zpswdmtao7q_large.jpg?v=1630095416",
@@ -19,6 +21,7 @@ var data = [
         name: "DIOR SQUARE SUNGLASSES DIORBYDIOR 2 00086 GOLD 58MM BY DIOR",
         original_price: "149.00",
         offer_price: "500",
+        color:"Black"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/69464__org01_zpsmedoy4hj_large.jpg?v=1630095418",
@@ -26,6 +29,7 @@ var data = [
         name: "TOM FORD BUTTERFLY SUNGLASSES TF250 COLETTE 28F ROSE GOLD FT0250",
         original_price: "199.00",
         offer_price: "500",
+        color:"Black"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/DiorByDior-2-00086-1_large.jpg?v=1609777367",
@@ -40,6 +44,7 @@ var data = [
         name: "CHLOE HALO SUNGLASSES CE114SRI 835 GOLD/HAVANA 62MM 114",
         original_price: "99.00",
         offer_price: "500",
+        color:"Pink"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/TF250-28F-1_large.jpg?v=1625074687",
@@ -54,6 +59,7 @@ var data = [
         name: "PRE OWNED CHANEL ROUND TINTED SUNGLASSES",
         original_price: "451",
         offer_price: "347.00",
+        color:"Pink"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/FF0440S-0000J-1_large.jpg?v=1629991096",
@@ -61,6 +67,7 @@ var data = [
         name: "EMILIO PUCCI SUNGLASSES EP0096 42E 55 WOMEN ORANGE",
         original_price: "241",
         offer_price: "604.00",
+        color:"Pink"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/FF0440S-0000J-2_large.jpg?v=1629991097",
@@ -68,6 +75,7 @@ var data = [
         name: "CELINE WOMEN'S CL4024UN 47MM SUNGLASSES",
         original_price: "505",
         offer_price: "649.99",
+        color:"Pink"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/CE114SRI-835-1_large.jpg?v=1635466848",
@@ -117,6 +125,7 @@ var data = [
         name: "GUCCI WOMEN'S GG0414S 60MM SUNGLASSES",
         original_price: "650",
         offer_price: "779.99",
+        color:"Black"
     },
     {
         image: " https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111478392_RLLZ_2_large.jpg?v=1650968746",
@@ -124,6 +133,7 @@ var data = [
         name: "PR 17RS 1ABOA7 WOMENS SQUARE SUNGLASSES",
         original_price: "245",
         offer_price: "329.57",
+        color:"Black"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/tmf-sung-ft0749-52j-60-1_large.jpg?v=164",
@@ -131,6 +141,7 @@ var data = [
         name: "TOM FORD WOMEN'S MARCELLA 48MM SUNGLASSES",
         original_price: "430",
         offer_price: "529.99",
+        color:"Black"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111117888_RLLZ_1_c3ff2cbb-3573-4cc5-ad6c-fad50584f673_large.jpg?v=1651560722",
@@ -138,6 +149,7 @@ var data = [
         name: "TOM FORD FLETCHER SQUARE SUNGLASSES FT0832-F 55C 60",
         original_price: "390",
         offer_price: "540.00",
+        color:"Black"
     },
     {
         image: " https://cdn.shopify.com/s/files/1/0248/3473/6191/products/Link-2-0869O-1_large.jpg?v=1628917529",

@@ -9,102 +9,320 @@
     <link rel="stylesheet" href="/sunglass.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <style>
+        * {
+            margin: 0%;
+            padding: 0%;
 
+        }
+
+        .stiky {
+            /* position: fixed; */
+            width: 100%;
+            background-color: white;
+            color: gray;
+        }
+
+        .zxnav {
+            width: 100%;
+            height: auto;
+            /* border: 1px red solid; */
+            margin-top: 20px;
+        }
+
+        .zxlogobox1 {
+            display: flex;
+
+            justify-content: space-around;
+        }
+
+        .zxlogobox1>a>img {
+            padding-left: 400px;
+            padding-right: 200px;
+        }
+
+        .zxlogcon {
+
+            display: flex;
+            gap: 10px;
+
+
+        }
+
+        .zxlogcon a>img {
+            width: 25px;
+            height: 25px;
+            margin-top: 15px
+        }
+
+        /* for new line */
+        /* .nav{
+    /* margin-left: 50px;
+    margin-right: 50px; */
+        .nav {
+            width: 99%;
+            margin: auto;
+            display: flex;
+            /* grid-template-columns: (auto auto auto auto auto auto auto auto auto);
+    grid-template-rows: auto;
+    row-gap: 10px; */
+
+
+            /* align-items: center; */
+            justify-content: space-around;
+            margin-top: 0px;
+
+            /* width: 100%; */
+            background: #fff;
+            height: 50px;
+            /* border: 1px red solid; */
+        }
+
+        .CLEARANCE {
+            color: red;
+        }
+
+        ul {
+
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+        }
+
+        ul li {
+
+            float: left;
+            margin-top: 5px;
+        }
+
+        ul li a {
+
+            width: 100%;
+            color: rgb(95, 93, 93);
+            display: flex;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: Helvetica, Helvetica, Arial, sans-serif;
+            margin-left: 9px;
+
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        ul li ul {
+            background: white;
+        }
+
+        ul li ul {
+            display: none;
+        }
+
+        ul li:hover ul {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            background: white;
+            color: black;
+        }
+
+        .nav>ul>li>a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
-    <div id="main">
-        <h1>Women's Sunglasses</h1>
-    <div id="info">
-        <p>Showing 40 results for "Sunglasses"</p>
-        <button>Best Selling v</button>
-    </div>
-    <div id="container">
-
-        <div id="left">
-            <div id="sidebar">
-                <div id="sidebar1">
-                    <ul>
-                        <li id="filter">
-
-                            <div id="arrow"><span id="glass1" class="material-icons">keyboard_arrow_down</span>
-                                CATEGORY</div>
-
-                            <div class="hide cat">
-                                <input type="checkbox">
-                                Sunglasses
-                            </div>
-
-                        </li>
-                    </ul>
-                    <hr>
-                    <ul>
-                        <li id="brand">
-
-                            <div id="arrow"><span id="glass2" class="material-icons">keyboard_arrow_down</span>
-                                Brands</div>
-
-                            <div class="hide2">
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Barbour(15)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Alexander McQueen(13)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Bottega Veneta(14)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Burberry(11)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Balenciaga(12)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Brooks Brothers(5)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Chanel(10)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Chloe(15)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Cami(10)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Canada Weather Gear(10)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    District(12)
-                                </div>
-                                <div class="cat">
-                                    <input type="checkbox">
-                                    Dives(14)
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <hr>
-                </div>
+    <!-- navbar starts -->
+    <div class="stiky">
+        <!-- <div class="zxnav" data-logo-align="center"> -->
+        <div class="zxlogobox1">
+            <a href="#">
+                <img class="zxlogo"
+                    src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243"
+                    alt="company logo"></a>
+            <div class="zxlogcon">
+                <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkEB9qduFTSf1VbEdd3xgyFVfkg9lT8XNZCg&usqp=CAU"
+                        alt="">
+                </a>
+                <p>SEARCH</p>
+                <a href="#">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg"
+                        alt=""></a>
+                <a href="#">
+                    <img src="https://cdn1.iconfinder.com/data/icons/office-suite-1/100/BOL_11-512.png" alt=""></a>
             </div>
         </div>
-        <div id="right">
+        <!-- new row is started -->
+        <div class="nav">
+            <ul>
+                <li><a href="#">SHOES</a>
+                    <ul>
+                        <li><a href="#">WOMEN'S SHOES</a>
 
+                        </li>
+                        <li><a href="#">WOMEN'S DESIGNERS</a></li>
+                        <li><a href="#">MEN'S SHOES </a></li>
+                        <li><a href="#">MEN'S DESIGNERS</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">HANDBAG & ACCESSORIES</a>
+                    <ul>
+                        <li><a href="#">ALL HANDBAG</a></li>
+                        <li><a href="#">TOP DESIGNERS</a></li>
+                        <li><a href="#">PRE-OWNEED</a></li>
+                        <li><a href="#">ACCESSORIES</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">DESIGNERS</a>
+                    <ul>
+                        <li><a href="#">Balenciaga</a></li>
+                        <li><a href="#"> Bottega Veneta</a></li>
+                        <li><a href="#">Burberry</a></li>
+                        <li><a href="#">Celine</a></li>
+                        <li><a href="#">Chloe</a></li>
+                        <li><a href="#">Christian Louboutin</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">WOMEN</a>
+                    <ul>
+                        <li><a href="womenPage.html">CLOTHING</a></li>
+                        <li><a href="#">HANDBAGS</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">JEWELRY</a></li>
+                        <li><a href="#">ACCESSORIES</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MEN</a>
+                    <ul>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">JEWELRY</a></li>
+                        <li><a href="#">ACCESSORIES</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SUNGLASSES</a>
+                    <ul>
+                        <li><a href="sunglass.html">WOMEN'S SUNGLASSES</a></li>
+                        <li><a href="#">MEN'S SUNGLASSES</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">JEWELRY & WATCHES</a>
+                    <ul>
+                        <li><a href="#">JEWELRY</a></li>
+                        <li><a href="#">TOP DISIGNER WATCHES A-J</a></li>
+                        <li><a href="#">TOP DISIGNER WATCHES K-Z</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">UNDER $50</a>
+                    <ul>
+                        <li><a href="#">SHOP BY PRICEPOINT</a></li>
+                        <li><a href="#">SHOP BY CATEGORY</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">BEAUTY</a>
+                    <ul>
+                        <li><a href="#">FRAGRANCE</a></li>
+                        <li><a href="#">SKINCARE</a></li>
+                        <li><a href="#">HAIRCARE</a></li>
+                    </ul>
+                </li>
+                <li><a class="CLEARANCE" href="#">CLEARANCE</a>
+                    <ul>
+                        <li><a href="#">FRAGRANCE</a></li>
+                        <li><a href="#">SKINCARE</a></li>
+                        <li><a href="#">HAIRCARE</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
+    <!-- navbar ends -->
+    <div id="main">
+        <h1>Women's Sunglasses</h1>
+        <div id="info">
+            <p>Showing 40 results for "Sunglasses"</p>
+            <button>Best Selling v</button>
+        </div>
+        <div id="container">
+
+            <div id="left">
+                <div id="sidebar">
+                    <div id="sidebar1">
+                        <div id="arrow"><span id="glass1" class="material-icons">keyboard_arrow_down</span>
+                            CATEGORY</div>
+
+                        <div class="hide cat">
+                            <input type="checkbox">
+                            Sunglasses
+                        </div>
+                        <hr>
+                        <div id="arrow"><span id="glass2" class="material-icons">keyboard_arrow_down</span>
+                            Brands</div>
+
+                        <div class="hide2">
+                            <div class="cat">
+                                <input type="checkbox">
+                                Barbour(15)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                Alexander McQueen(13)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                Bottega Veneta(14)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                Burberry(11)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                Balenciaga(12)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                Brooks Brothers(5)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                Chanel(10)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                Chloe(15)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                Cami(10)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                Canada Weather Gear(10)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                District(12)
+                            </div>
+                            <div class="cat">
+                                <input type="checkbox">
+                                Dives(14)
+                            </div>
+                        </div>
+
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+
+            </div>
+        </div>
     </div>
 </body>
 
