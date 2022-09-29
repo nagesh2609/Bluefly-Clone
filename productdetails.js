@@ -95,7 +95,7 @@ displaylike(maydata)
 function displaylike(maydata){
     maydata.forEach(function(el){
         var div=document.createElement("div");
-        div.setAttribute("class","maylike");
+        div.setAttribute("id","maylike");
     var image=document.createElement("img");
     image.setAttribute("src",el.image);
   var name=el.name;
@@ -110,14 +110,19 @@ div2.setAttribute("id","likediv")
         price1.innerText= "$" +el.original_price
         var price2=document.createElement("div")
   price2.innerText= "$"+el.offer_price
-  var discount=(+data.original_price-(+data.offer_price))
-  var discount2=Math.ceil((discount/+data.original_price)*100)
+  var discount=(+el.original_price-(+el.offer_price))
+  console.log(discount)
+  var discount2=Math.ceil((discount/+el.original_price)*100)
   console.log(discount2)
   var discount=document.createElement("div")
   discount.innerText= "Save"+" "+discount2+" "+"%"
   div2.append(price1,price2,discount)
-  div.append(image,h2,div2)
+  var hoverdiv = document.createElement("div");
+  hoverdiv.setAttribute("id","hoverdiv")
+  hoverdiv.innerText="Quick view"
+  div.append(image,h2,div2,hoverdiv)
   console.log(image,h2)
+  
   document.querySelector("#mid").append(div)
 div.addEventListener("click",zoomin)
 
@@ -166,8 +171,8 @@ div2.setAttribute("id","likediv")
         price1.innerText= "$" +elem.original_price
         var price2=document.createElement("div")
   price2.innerText= "$"+elem.offer_price
-  var discount=(+data.original_price-(+data.offer_price))
-  var discount2=Math.ceil((discount/+data.original_price)*100)
+  var discount=(+elem.original_price-(+elem.offer_price))
+  var discount2=Math.ceil((discount/+elem.original_price)*100)
   console.log(discount2)
   var discount=document.createElement("div")
   discount.innerText= "Save"+" "+discount2+" "+"%"
@@ -185,5 +190,12 @@ function zoom(){
     })
 }
 
+// add cart item-->
 
+
+document.querySelector("#cart").addEventListener("click",cartclick);
+function cartclick(){
+    document.querySelector("#cart").style.cursor="pointer"
+    localStorage.setItem("cartitem",JSON.stringify(data))
+}
 
